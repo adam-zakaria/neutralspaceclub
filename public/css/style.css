@@ -1,0 +1,72 @@
+#headerDiv{
+    margin: 0 0 0 5vw;
+    position: relative;
+    top: 4vh;
+    overflow: auto;
+}
+
+#headerTitle{
+    width: 80%;
+    margin: 0 0 0 0; /*top,right,bottom,left*/
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    /*text-align: center;*/
+    text-shadow: 2px 2px 2px #D3D3D3; /*horizontal, vertical, blur*/
+}
+
+#headerSubtext{
+    /*text-align: right;*/
+    margin-top: -.6vh;
+    margin-left: 32vw;
+    font-size: 2vw;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+#postDiv{
+    margin: 7vw 0 0 8vw;
+    background-color: ;
+}
+
+#postTitle{
+    width: 80%;
+    font-weight:200;
+    font-family: 'Open Sans', sans-serif;
+    margin: ;
+    /*text-align: center;*/
+}
+
+
+#postText{
+    width: 80%;
+    margin-left: 3vw;
+    font-family: 'Open Sans', sans-serif;
+    /*text-align: center;*/
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    /*background-color: #8795E8;*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    min-height: 100%;
+    width: 98%;
+}
+
+.elementToFadeInAndOut {
+    animation: fadeinout 3s linear .5s infinite alternate 
+}
+     /*animation-name, animation-duration, animation-timing-function, animation-delay animation-iteration-count, animation-direction*/
+
+@keyframes fadeinout {
+    0%  { opacity: 1; }
+    25% { opacity: .75; }
+    50% { opacity: .5; }
+    75% { opacity: .25; }
+    100%{ opacity: 0; }
+}
+

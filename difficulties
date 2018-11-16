@@ -1,0 +1,12 @@
+You NEED to use static to serve stylesheets
+
+<base href="/"> #Did not work
+<link rel="stylesheet" text="text/html" href="/home/john/Code/blog/css/style.css">#adding text/html did not work I DID text instead of TYPE
+putting text/html got rid of the error message...but then no request was being made
+I'm not sure why there was an error message in the first place.
+
+
+Just in case, I disabled cache on chrome network tab. Did this because I looked in the network tab and realized that I was getting 304s The HTTP 304 Not Modified client redirection response code indicates that there is no need to retransmit the requested resources. It is an implicit redirection to a cached resource.
+
+"You have to check that file exist on server. I found the reason, because there are no file (or missing) when upload source code to the server. So when the css file not found, server returns html MIME type"
+
