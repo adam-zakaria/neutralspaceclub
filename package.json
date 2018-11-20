@@ -10,7 +10,9 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
+    "g": "^2.0.1",
     "nodemon": "^1.18.6",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "postcss": "^7.0.6"
   }
 }
