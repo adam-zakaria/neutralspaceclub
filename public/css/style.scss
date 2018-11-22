@@ -1,0 +1,124 @@
+html{
+    height: 100%;
+}
+
+body{
+    /*background-color: #8795E8;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;*/
+    /*min-height: 100%;*/
+    /*width: 98%;*/
+}
+
+#centerDiv{
+    width: 80%;
+    max-width: 760px;
+    margin: 0 auto 0 auto;
+    /*background-color: gray;*/
+}
+
+#headerDiv{
+    /*overflow: auto;*/
+    width: 96%;
+    margin: 0 auto 0 auto;
+}
+
+#postTitle{
+    width: 92%;
+    margin: 0 auto 0 auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#postText{
+    /*font-size: 100%;*/
+    font-size: 1.1vw;
+    width: 88%;
+    margin: 6px auto 0 auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p{
+    max-width: 80em;
+    word-wrap:break-word;
+}
+
+/*for devices smaller than 
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #headerTitle{
+        margin: 20px 0 0 0; /*top,right,bottom,left*/
+        font-size: 22px;
+        font-weight: 700;
+        font-family: 'Roboto', sans-serif;
+        text-shadow: 2px 2px 2px #D3D3D3; /*horizontal, vertical, blur*/
+    }
+    #headerSubtext{
+        position: relative;
+        left: 120px;
+        bottom: 8px;
+        font-size: 10px;
+        font-family: 'Roboto', sans-serif;
+    }
+    #postTitle{
+        font-weight:200;
+        font-size: 16px;
+        /*text-align: center;*/
+    }
+    #postText{
+        font-size: 12px;
+        font-family: 'Open Sans', sans-serif;
+        /*text-align: center;*/
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #headerTitle{
+        margin: 20px 0 0 0; /*top,right,bottom,left*/
+        font-size: 30px; /*changed*/
+        font-weight: 700;
+        font-family: 'Roboto', sans-serif;
+        text-shadow: 2px 2px 2px #D3D3D3; /*horizontal, vertical, blur*/
+    }
+    #headerSubtext{
+        position: relative;
+        left: 160px;
+        bottom: 16px;
+        font-size: 14px;
+        font-family: 'Roboto', sans-serif;
+    }
+    #postTitle{
+        font-weight:200;
+        font-size: 18px;
+        /*text-align: center;*/
+    }
+    #postText{
+        /*font-size: 12px;*/
+        /*text-align: center;*/
+    }
+}
+
+.elementToFadeInAndOut {
+    animation: fadeinout 3s linear .5s infinite alternate 
+}
+     /*animation-name, animation-duration, animation-timing-function, animation-delay animation-iteration-count, animation-direction*/
+
+@keyframes fadeinout {
+    0%  { opacity: 1; }
+    25% { opacity: .75; }
+    50% { opacity: .5; }
+    75% { opacity: .25; }
+    100%{ opacity: 0; }
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

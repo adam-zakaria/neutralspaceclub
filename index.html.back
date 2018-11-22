@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+    <div id="centerDiv">
+        <div id="headerDiv">
+            <h1 id="headerTitle"> Neutral Space Club </h1>
+            <p id="headerSubtext" class="elementToFadeInAndOut"> have some tea, say hello </p>
+        </div>
+
+        <div id="postDiv">
+            <h2 id="postTitle"> Why use an encrypted messaging app? </h2>
+            <br>
+            <p id="postText"> 
+                What is privacy? What is privacy? Why do we care about? What is privacy? What is privacy? Why do we care about?What is privacy? What is privacy? Why do we care about?What is privacy? What is privacy? Why do we care about?What is privacy? What is privacy? Why do we care about?What is privacy? What is privacy? Why do we care about?What is privacy? What is privacy? Why do we care about?What is privacy? What is privacy? Why do we care about?What is privacy? What is privacy? Why do we care about?What is privacy? What is privacy? Why do we care about?What is privacy? What is privacy? Why do we care about?What is privacy? What is privacy? Why do we care about?What is privacy? What is privacy? Why do we care about?What is privacy? What is privacy? Why do we care about?What is privacy? What is privacy? Why do we care about?What is privacy? What is privacy? Why do we care about?What is privacy? What is privacy? Why do we care about?What is privacy? What is privacy? Why do we care about?
+            </p>
+        </div>
+    </div>
+</body>
+</html>

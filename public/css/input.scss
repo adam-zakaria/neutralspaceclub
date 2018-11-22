@@ -1,0 +1,126 @@
+$min_width: 320px;
+$max_width: 1600px;
+$min_font: 12px;
+$max_font: 26px;
+
+/*general*/
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
+  $u1: unit($min-vw);
+  $u2: unit($max-vw);
+  $u3: unit($min-font-size);
+  $u4: unit($max-font-size);
+
+  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+    & {
+      font-size: $min-font-size;
+      @media screen and (min-width: $min-vw) {
+        font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+      }
+      @media screen and (min-width: $max-vw) {
+        font-size: $max-font-size;
+      }
+    }
+  }
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    @include fluid-type($min_width, $max_width, $min_font, $max_font);
+}
+
+body{
+    /*background-color: #8795E8;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;*/
+    /*min-height: 100%;*/
+    /*width: 98%;*/
+}
+
+#centerDiv{
+    width: 80%;
+    max-width: 760px;
+    min-width: 260px;
+    margin: 0 auto 0 auto;
+    /*background-color: gray;*/
+}
+
+#headerDiv{
+    /*overflow: auto;*/
+    width: 96%;
+    margin: 0 auto 0 auto;
+}
+
+#headerTitle{
+    font-size: 160%;
+    margin: 20px 0 0 0; /*top,right,bottom,left*/
+    /*font-size: 22px;*/
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 2px 2px 2px #D3D3D3; /*horizontal, vertical, blur*/
+}
+#headerSubtext{
+    display: inline-block;
+    font-size: 80%;
+    position: relative;
+    left: 120px;
+    bottom: 8px;
+    font-family: 'Roboto', sans-serif;
+}
+#postDiv{
+    width: 92%;
+    margin: 0 auto 0 auto;
+}
+
+#postTitle{
+    display: inline-block;
+    font-size: 120%;
+    width: 92%;
+    margin: 0 auto 0 auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#dateAndAuthor{
+    /*display: inline-block;*/
+    text-align: right;
+    font-size: 80%;
+    position: relative;
+    /*left: 250px;*/
+    bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+#inline{
+    display: inline-block;
+}
+
+
+#postText{
+    /*font-size: 100%;*/
+    width: 88%;
+    margin: 6px auto 0 auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p{
+    max-width: 80em;
+    word-wrap:break-word;
+}
+
+.elementToFadeInAndOut {
+    animation: fadeinout 3s linear .5s infinite alternate 
+}
+     /*animation-name, animation-duration, animation-timing-function, animation-delay animation-iteration-count, animation-direction*/
+
+@keyframes fadeinout {
+    0%  { opacity: 1; }
+    25% { opacity: .75; }
+    50% { opacity: .5; }
+    75% { opacity: .25; }
+    100%{ opacity: 0; }
+}
+
+
